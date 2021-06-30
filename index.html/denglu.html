@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录页面</title>
+	<style>
+		<!--
+		/*背景样式*/
+		#bg{
+			width:100% ;
+			height:100%;
+			top:0px;
+			left:0px;
+			position: absolute;}
+		/*大表单样式*/
+		.login-box-wrapper{
+						position: absolute;   
+						top: 40%;   
+						left:30%;   
+						margin: -150px 0 0 -150px;   
+						width: 400px;   
+						height: 400px;
+						background-color: #FDFDFD}
+		h1{text-align: center;font-size: 25px;margin-top:20px;}
+		.login-box{text-align: center;}
+		/*小表单样式*/
+		input{   
+			width: 300px;   
+			height: 18px;   
+			margin-bottom: 10px;   
+			outline: none;   
+			padding: 10px;   
+			font-size: 13px;   
+			color: #fff;   
+			text-shadow:1px 1px 1px;   
+			border-top: 1px solid ;   
+			border-left: 1px solid;   
+			border-right: 1px solid;   
+			border-bottom: 1px solid;   
+			border-radius: 4px;   
+			background-color:#E3E2E0 ;} 
+		/*按钮样式*/
+		.button{   
+			width: 320px;   
+			min-height: 35px;   
+			display: block;   
+			background-color:#0D0C0C;   
+			border: 1px solid #3762bc;   
+			color: #fff;   
+			padding: 0px;   
+			font-size: 15px;   
+			line-height: normal;   
+			border-radius: 3px;   
+			margin:0 0 0 38px ;}
+		/*文末字体样式*/
+		.message{
+			margin-top:25px;
+			text-align: center;
+			font-size: 15px;}
+		-->
+	</style>
+</head>
+<body>
+	<!--背景图片-->
+	<img id="bg" src="img/yiyuzhen.png" alt="背景图片" />
+	<!--大表单-->
+	<div class="login-box-wrapper">
+        <h1>用户登录</h1>
+		<!--表单文字内容-->
+   	    <form method="post" class="login-box">
+			<p class="row">
+				<input type="text" placeholder="用户名" name="username">
+			</p>
+			<p class="row">
+				<input type="password" placeholder="密码" name="password">
+			</p>
+			<p>
+				<input type="submit" class="button" value="立即登录">
+			</p> 
+			<p class="message">还没有账户？<a href="#">立即创建</a></p>	
+   		 </form>
+	</div>
+</body>
+</html>
